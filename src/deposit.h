@@ -8,8 +8,8 @@
 
 using namespace std;
 
-int verifyDeposit(int deposit);
-int verifyDays(int days);
-
+int verifyDeposit(int x);
+int verifyDays(int d);
+int calculateDohod(int d, int x, int s);
 
 #endif

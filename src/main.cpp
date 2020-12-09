@@ -1,4 +1,4 @@
-#include "deposit.h"
+##include "deposit.h"
 
 
 int main()
@@ -15,12 +15,14 @@ int main()
 
 	cout << "Введите срок вклада (не более 365 дней): ";
 	cin >> d;
-	switch(verifyDays(d)) {
-	case 1:
-		cout << "Срок не может быть отрицательным" << endl; 
-		return 1;
-	case 2:
+	if(verifyDays(d)) {
+	
 		cout << "Срок должен быть не более 365 дней" << endl;
 		return 1;
 	}
-	
+	s= calculateDohod(x, d, s);
+
+	cout << "доход\n" << s << endl;
+
+	return 0;
+}
